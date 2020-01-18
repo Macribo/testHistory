@@ -10,18 +10,21 @@ body{
 
     height:200px;
     /* width:200px; */
-    border:2px solid orange;
+    /* border:2px solid orange; */
     align-items: center;
-    text-align: center;
-
+    text-align:center;
+    vertical-align: middle;
 }
 #middle{
     background-size:contain;
     background-repeat:no-repeat;
     background-position: center;
 }
-.foot{
+#top-content{
+    color:white;
 
+}
+.foot{
     justify-content: space-around;
 }
 

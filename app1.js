@@ -3,11 +3,30 @@ var slide = 0;
 let lastSlide = 29;
 // import TypeWriting from 'typewriting'?;
             let textTop = [
-                `2`,
+               
+    ``,
+
+    `Fadó fadó...`,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+              
                 
               ];
 let textBottom = [
     
+    ``,
+    `
+    An Iberian tribe                 
+    called the Milesians
+    arrived at the island now called 
+    Ireland 
+     
+    `,
+    ``,
+    ``,
     ``,
   `I am the wind which breaths upon the sea
   I am the wave of the ocean
@@ -66,39 +85,36 @@ $('#prev').on('touchend', function(){
 
 $('#done').on('touchend', function(){
 alert('done pressed')    
-    // redirect
-    // render();
+// redirect
+// render();
 })
 $(document).ready(function() {
-
-
-
-render = () =>{
-
-
-    //clear top middle and bottom sections
-    // $('#middle').empty();
-    // $('#bottom').empty();
-
-        //load new content into top middle bottom sections
-        
-        
-        setTimeout(function(){
-            
-            $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
-            $('#top-content').fadeIn()
-        
-            $('#middle').empty().css('background-image', `url('./images/About1/${images[slide]}')`);
-        
-            
-        },600);
+    
+    
+    
+    render = () =>{
         
         $('#top-content').fadeOut();
         $('#middle-content').fadeOut();
+        $('#bottom-content').fadeOut();
+
+        setTimeout(function(){
+            
+            $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
+            $('#top-content').fadeIn('slow')
+        
+            $('#middle').empty().css('background-image', `url('./images/About1/${images[slide]}')`);
+            
+            $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
+            $('#bottom-content').fadeIn('slow')
+            
+            
+        },600);
         
         
         
-        $('#middle-content').fadeIn()
+        
+        // $('#middle-content').fadeIn()
 
         // $('#bottom').append(`<h2 id="bottom-content">${textBottom[slide]}</h2>`)
 
