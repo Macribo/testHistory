@@ -11,8 +11,15 @@ body{
     height:200px;
     /* width:200px; */
     border:2px solid orange;
-}
+    align-items: center;
+    text-align: center;
 
+}
+#middle{
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
 .foot{
 
     justify-content: space-around;
@@ -34,5 +41,7 @@ background-color:yellow;
         left:0;
         z-index: 5000;
 } 
+
+
 
 }
