@@ -1,13 +1,20 @@
 @font-face {
-    font-family: aonchlo;
-    src: url('./fonts/aonchlo.ttf');
+    font-family: urchlo;
+    src: url('./fonts/Urchlo\ Romhanach.ttf');
   }
   
 
 body{
     background-color: black;
+    overflow: hidden;
+    overflow-x: hidden;
 }
-
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
 .container{
     /* border:3px solid green; */
 }
@@ -32,49 +39,81 @@ padding-top:5%;
 }
 #top-content{
     color:whitesmoke;
-    font-family:aonchlo;
+    font-family:urchlo;
 
 }
 .foot{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
     justify-content: space-around;
+    margin-bottom:0;
+    padding-bottom: 0;
+    height:6%;
+    z-index: 5000;
+}
+
+@keyframes sea-move {
+    from {
+      transform: translate(-3%, 0%);
+    }
+  
+    to {
+      transform: translate(-50%, 0%);
+    }
+}  
+    .sea{
+        /* border:2px solid green; */
+/* height:100%; */
+width:957px;
+left:0;
+background-size:cover !important;
+        animation: 50s sea-move infinite alternate linear;
+    }
+
+    @media only screen and (orientation:portrait){
+
+    .screen-blocker{
+        display:none;
+    }
 }
 
 @media only screen and (orientation:landscape){
     #top,#middle,#bottom{
 
-    border:2px solid green;
     
-}
+    }
 
-#gears{
-    background-image: url('./images/gears.png');
-    background-repeat: no-repeat;
-    height:200px;
-    background-position: center;
+    #gears{
+        background-image: url('./images/gears.png');
+        background-repeat: no-repeat;
+        height:200px;
+        background-position: center;
 
-}
-h4{
-    text-align: center;
-    margin:-4px;
-}
+    }
+    h4{
+        text-align: center;
+        margin:-4px;
+    }
 
-.gaeilge{
-    font-family: aonchlo;
-}
-#screen-blocker{
+    .gaeilge{
+        font-family: urchlo;
+    }
+    #screen-blocker{
 
         border:2px solid blue;
-background-color:yellow;
-display:grid;
-vertical-align: center;
-align-content: center;        
-height:100%;
+        background-color:yellow;
+        display:grid;
+        vertical-align: center;
+        align-content: center;        
+        height:100%;
         width:100%;
         position: fixed;
         top:0;
         left:0;
         z-index: 5000;
-} 
+    } 
 
 
 

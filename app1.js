@@ -1,6 +1,7 @@
 
 var slide = 0;
-var poemSlide = 7;
+var firstPoemSlide = 7;
+var lastPoemSlide = 12;
 let lastSlide = 29;
 // import TypeWriting from 'typewriting'?;
             let textTop = [
@@ -9,11 +10,11 @@ let lastSlide = 29;
 
     `Fadó fadó...`,
     
-    `Fadó fadó...`,
-    `Fadó fadó...`,
-    `Fadó fadó...`,
-    `Fadó fadó...`,
-    `Fadó fadó...`,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
     `Am gaeth i m-muir
     Am tond trethan
     Am fuaim mara
@@ -174,8 +175,9 @@ let images = [
     `blue-cape.gif`,
     `b.png`,
     `c.png`,
-    ``,
-    `placeHolder0.png`,
+    `sea.png`,
+
+    `sea.png`,
     `placeHolder0.png`,
     `placeHolder0.png`,
     `placeHolder0.png`,
@@ -214,24 +216,45 @@ $(document).ready(function() {
     
     
     render = () =>{
-        
-        $('#top-content').fadeOut();
-        $('#middle-content').fadeOut();
-        $('#bottom-content').fadeOut();
+        if(slide=== firstPoemSlide-1){
+            $('#middle').fadeOut();
+            
+        }
+        if(slide >= firstPoemSlide && slide <= lastPoemSlide){
+            $('#middle').addClass('sea');
+            $('#middle').fadeIn();
 
-        setTimeout(function(){
+            $('#top-content').fadeOut();
+            $('#bottom-content').fadeOut();
+            setTimeout(function(){
+                
+                $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
+                $('#top-content').fadeIn('slow')
+                $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
+                $('#bottom-content').fadeIn('slow')
+                                 
+                },600);
+        }
+        else{
             
-            $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
-            $('#top-content').fadeIn('slow')
-        
-            $('#middle').empty().css('background-image', `url('./images/About1/${images[slide]}')`);
             
-            $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
-            $('#bottom-content').fadeIn('slow')
+            $('#top-content').fadeOut();
+            $('#middle-content').fadeOut();
+            $('#bottom-content').fadeOut();
             
+            setTimeout(function(){
+                
+                $('#middle').removeClass('sea');
+                $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
+                $('#top-content').fadeIn('slow')
             
-        },600);
-        
+                $('#middle').empty().css('background-image', `url('./images/About1/${images[slide]}')`);
+                
+                $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
+                $('#bottom-content').fadeIn('slow')
+                                 
+                },600);
+            }        
         
         
         
