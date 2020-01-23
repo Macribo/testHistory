@@ -1,3 +1,9 @@
+@font-face {
+    font-family: aonchlo;
+    src: url('./fonts/aonchlo.ttf');
+  }
+  
+
 body{
     background-color: black;
 }
@@ -34,7 +40,23 @@ body{
     border:2px solid green;
     
 }
-    #screen-blocker{
+
+#gears{
+    background-image: url('./images/gears.png');
+    background-repeat: no-repeat;
+    height:200px;
+    background-position: center;
+
+}
+h4{
+    text-align: center;
+    margin:-4px;
+}
+
+.gaeilge{
+    font-family: aonchlo;
+}
+#screen-blocker{
 
         border:2px solid blue;
 background-color:yellow;
