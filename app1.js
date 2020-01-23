@@ -1,7 +1,7 @@
 
 var slide = 0;
 var firstPoemSlide = 7;
-var lastPoemSlide = 12;
+var lastPoemSlide = 11;
 let lastSlide = 29;
 // import TypeWriting from 'typewriting'?;
             let textTop = [
@@ -39,6 +39,9 @@ let lastSlide = 29;
     ``,
     ``,
     ``,
+    
+
+    `1169 AD`
     ``,
     ``,
     ``,
@@ -49,9 +52,6 @@ let lastSlide = 29;
     ``,
     ``,
     
-
-    `1169 AD`
-
                 
               ];
 let textBottom = [
@@ -121,16 +121,14 @@ Gaelic civilization
 flourished in Ireland.`
 ,
 
-`In 1169 AD 
-Norman Mercenaries were invited to Ireland 
-by the Gaelic king Diarmait Mac Murchada to help him control the province of Leinster.`
+`Norman Mercenaries were invited to Ireland 
+by King Diarmait Mac Murchada to control Leinster.`
 ,
 `So began 800 years of English rule in Ireland.`
 ,
 `Over the centuries, Norman warlords sent to conquer became integrated into Gaelic society.`
 ,
 `Subsequent waves of Crown forces faced the descendents of previous invaders who had become 
-
 "More Irish than the Irish themselves"`
 ,
 `By the start of the sixteenth century,
