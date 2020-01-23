@@ -15,24 +15,24 @@ let lastSlide = 29;
     ``,
     ``,
     ``,
-    `Am gaeth i m-muir
-    Am tond trethan
+    `Am gaeth i m-muir <br/>
+    Am tond trethan<br/>
     Am fuaim mara
     `,
-    `Am dam secht ndirend
-    Am séig i n-aill
-    Am dér gréne
+    `Am dam secht ndirend <br/>
+    Am séig i n-aill<br/>
+    Am dér gréne<br/>
     Am cain lubai
     `,
-    `Am torc ar gail
-    Am he i l-lind
+    `Am torc ar gail<br/>
+    Am he i l-lind<br/>
     Am loch i m-maig`
     ,
-    `Am bri danae
-    Am bri i fodb fras feochtu
+    `Am bri danae<br/>
+    Am bri i fodb fras feochtu<br/>
     Am dé delbas do chind codnu
     `,
-    `...Cáinte im gai 
+    `...Cáinte im gai<br/> 
     cainte gaithe.
     `,
     ``,
@@ -41,10 +41,14 @@ let lastSlide = 29;
 
     `1169 AD`,
     ``,
+    `An Pháil`,
+    `Dara Éirí Amach i nDeasmhumhain (1579-1583) `,
     ``,
-    ``,
-    ``,
-    ``,
+    `"Soe that the speach being Irish, 
+the hart must needes be Irishe; 
+for out of the aboundance of the hart, 
+the tonge speaketh"`
+,
     ``,
     ``,
     ``,
@@ -81,75 +85,62 @@ let textBottom = [
     expedition from reaching land. 
     `,
     `But Amergín was a poet
-    and words have power`,
+    and words have power...`,
 
-    `I am the wind which breaths upon the sea
-  I am the wave of the ocean
+    `I am the wind which breaths upon the sea<br/>
+  I am the wave of the ocean<br/>
   I am the murmur of the billows`,
     
-  `I am Stag of Seven Tines
-  I am a Hawk on a Cliff
-  I am a beam of the sun
+  `I am Stag of Seven Tines<br/>
+  I am a Hawk on a Cliff<br/>
+  I am a beam of the sun<br/>
   I am the fairest of plants`,
       
-  `I am a salmon in the water
-  I am a wild boar in valor
+  `I am a wild boar in valor<br/>
+  I am a salmon in the water<br/>
   I am a lake in the plain`,
   
-  `I am a word of science
+  `I am a word of science<br/>
    I am the point of the lance of battle`,
-   `...(I am) a Song on a Spear
+   `...(I am) a Song on a Spear<br/>
    an Enchantment of Winds.`
 ,  
-`The storm calmed.`,
 `The kings of Dé Danann 
-were killed 
-in single combat
+were killed in single combat
  by the sons of Míl Espáine.`
 
 ,
 
-`The Dé Danann 
+`Dé Danann 
 retreated into the Earth,
 and for thousands of years 
 Gaelic civilization 
 flourished in Ireland.`
 ,
 
-`Norman Mercenaries were invited to Ireland 
+`In 1169AD Norman Mercenaries were invited to Ireland 
 by King Diarmait Mac Murchada to control Leinster.`
 ,
-`So began 800 years of English rule in Ireland.`
+`In England, King Henry II used his connection to the mercenaries to declare the conquered cities 
+crown-land. So began 800 years of English rule in Ireland.`
 ,
-`Over the centuries, Norman warlords sent to conquer became integrated into Gaelic society.`
-,
-`Subsequent waves of Crown forces faced the descendents of previous invaders who had become 
-"More Irish than the Irish themselves"`
-,
+
 `By the start of the sixteenth century,
 despite centuries of military campaigning,
 English law existed only within
- ‘The Pale’, 
-a small area of control surrounding Dublin Castle.`
+a small area surrounding Dublin Castle.`
 ,
 
 `In 1580 yet another Gaelic rebellion was defeated.
 The survivors were massacred on the orders of the English commander Lord Grey.`
 ,
-`Grey’s  servant, the great poet Edmund Spencer wrote to Queen Elizebeth I, explaining why the Irish kept resisting English rule.`
+`Grey’s servant, the great poet Edmund Spencer wrote to Queen Elizebeth I, explaining why the Irish kept resisting English rule:`
 ,
-`In his view, Ireland would never be totally 
-"pacified" by the English until 
-its indigenous language and customs had been destroyed.`
-,
-`"Soe that the speach being Irish, 
-the hart must needes be Irishe; 
-for out of the aboundance of the hart, 
-the tonge speaketh"`
-,
-`Edmund Spencer
-A Veue of the present state of Irelande
-1596`
+
+
+`-Edmund Spencer
+<i>A Veue of the present state of Irelande,
+1596</i>`
 ,
 `It is the contention of this app that
 Edmund Spencer was correct.
@@ -174,20 +165,20 @@ let images = [
     ``,
 
     `sea.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`,
-    `placeHolder0.png`
-
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,//storm calmed
+    ``,
+    
+    `norman.png`, //1169AD
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
 ]
 
 $('#next').on('touchend', function(){
@@ -245,6 +236,9 @@ $(document).ready(function() {
                 
                 $('#middle').removeClass('sea');
                 $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
+                console.log( images[slide]);
+                console.log( slide);
+
                 $('#top-content').fadeIn('slow')
             
                 $('#middle').empty().css('background-image', `url('./images/About1/${images[slide]}')`);
