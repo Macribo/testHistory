@@ -16,12 +16,13 @@ html, body {
     position: relative;
   }
 .container{
+    margin-top:7%;
     /* border:3px solid green; */
 }
 
 #top,#middle,#bottom{
 
-    height:200px;
+    height:180px;
     /* width:200px; */
     /* border:2px solid orange; */
     align-items: center;
