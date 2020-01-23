@@ -44,9 +44,6 @@ padding-top:5%;
 
 }
 
-#bottom-content:{
-    color:rgb(214, 189, 76)
-}
 .foot{
     position: fixed;
     height: 100px;
@@ -79,6 +76,9 @@ background-size:cover !important;
 
     @media only screen and (orientation:portrait){
 
+        #bottom-content{
+            color:rgb(143, 125, 48) ;
+        } 
     .screen-blocker{
         display:none;
     }

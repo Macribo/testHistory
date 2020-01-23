@@ -75,11 +75,8 @@ let textBottom = [
     `,
     `Amergin 
     led the Milesians
-     to Ireland, 
-    then ruled by 
-    a tribe called 
-     
-    Dé Dannan.`,
+     to an island ruled by 
+    the Dé Dannan tribe.`,
     `The druids of Dé Danann 
     raised a magical storm 
     to keep Amergín’s 
