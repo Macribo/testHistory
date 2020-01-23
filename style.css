@@ -26,8 +26,13 @@ body{
     background-repeat:no-repeat;
     background-position: center;
 }
+
+#top-content,#bottom-content{
+padding-top:5%;
+}
 #top-content{
-    color:white;
+    color:whitesmoke;
+    font-family:aonchlo;
 
 }
 .foot{
