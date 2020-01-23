@@ -32,6 +32,7 @@ html, body {
     background-size:contain;
     background-repeat:no-repeat;
     background-position: center;
+    /* transition:opacity 1s !important; */
 }
 
 #top-content,#bottom-content{

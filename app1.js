@@ -26,16 +26,25 @@ let lastSlide = 29;
     `,
     `Am torc ar gail
     Am he i l-lind
-    Am loch i m-maig
-    Am bri danae
-    Am bri 
-        i fodb fras feochtu
-    Am dé delbas
-             do chind codnu
+    Am loch i m-maig`
+    ,
+    `Am bri danae
+    Am bri i fodb fras feochtu
+    Am dé delbas do chind codnu
     `,
     `...Cáinte im gai 
     cainte gaithe.
     `,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
+    ``,
     ``,
     ``,
     ``,
@@ -93,8 +102,8 @@ let textBottom = [
   I am a lake in the plain`,
   
   `I am a word of science
-   I am the point of the lance of battle
-   ...(I am) a Song on a Spear
+   I am the point of the lance of battle`,
+   `...(I am) a Song on a Spear
    an Enchantment of Winds.`
 ,  
 `The storm calmed.`,
@@ -104,13 +113,7 @@ in single combat
  by the sons of Míl Espáine.`
 
 ,
-`Amergin 
-named the land after the queens
-of Dé Dannan:
 
-Banba, Fódla and Ériu 
-hence Éire.`
-,
 `The Dé Danann 
 retreated into the Earth,
 and for thousands of years 
@@ -175,7 +178,7 @@ let images = [
     `blue-cape.gif`,
     `b.png`,
     `c.png`,
-    `sea.png`,
+    ``,
 
     `sea.png`,
     `placeHolder0.png`,
@@ -218,10 +221,13 @@ $(document).ready(function() {
     render = () =>{
         if(slide=== firstPoemSlide-1){
             $('#middle').fadeOut();
+            // alert();
             
         }
         if(slide >= firstPoemSlide && slide <= lastPoemSlide){
             $('#middle').addClass('sea');
+            $('#middle').empty().css('background-image', `url('./images/About1/sea.png')`);
+            
             $('#middle').fadeIn();
 
             $('#top-content').fadeOut();
@@ -239,7 +245,7 @@ $(document).ready(function() {
             
             
             $('#top-content').fadeOut();
-            $('#middle-content').fadeOut();
+            $('#middle').fadeOut();
             $('#bottom-content').fadeOut();
             
             setTimeout(function(){
@@ -252,6 +258,7 @@ $(document).ready(function() {
                 
                 $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
                 $('#bottom-content').fadeIn('slow')
+                $('#middle').fadeIn('slow')
                                  
                 },600);
             }        
