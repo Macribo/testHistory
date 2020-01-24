@@ -42,7 +42,8 @@ let lastSlide = 29;
     `1169 AD`,
     ``,
     `An Pháil`,
-    `Dara Éirí Amach i nDeasmhumhain (1579-1583) `,
+    `Éirí Amach <br/>
+    1579-1583`,
     ``,
     `"Soe that the speach being Irish, 
 the hart must needes be Irishe; 
@@ -118,17 +119,14 @@ Gaelic civilization
 flourished in Ireland.`
 ,
 
-`In 1169AD Norman Mercenaries were invited to Ireland 
-by King Diarmait Mac Murchada to control Leinster.`
+`In 1169 AD, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster.`
 ,
-`In England, King Henry II used his connection to the mercenaries to declare the conquered cities 
+`King Henry II of England used this to declare the conquered cities 
 crown-land. So began 800 years of English rule in Ireland.`
 ,
 
-`By the start of the sixteenth century,
-despite centuries of military campaigning,
-English law existed only within
-a small area surrounding Dublin Castle.`
+`By 1500 AD, despite centuries of military campaigning,
+English law existed only around Dublin Castle.`
 ,
 
 `In 1580 yet another Gaelic rebellion was defeated.
@@ -170,14 +168,14 @@ let images = [
     ``,
     ``,
     ``,//storm calmed
-    ``,
+    `retreat.png`,
     
-    `norman.png`, //1169AD
-    ``,
-    ``,
-    ``,
-    ``,
-    ``,
+    `king.png`, //1169AD
+    `norman.png`,
+    `pale.png`,
+    `ruairi.png`,
+    `spencer.png`,
+    `spencer.png`,
     ``,
 ]
 
