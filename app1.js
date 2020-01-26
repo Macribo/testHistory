@@ -1,9 +1,9 @@
 
-var slide = 10;
+var slide = 0;
 var firstPoemSlide = 7;
 var lastPoemSlide = 11;
 let lastSlide = 29;
-let spencer1 = 18;
+let spencer1 = 19;
 let spencer2 = 19;
 
 // import TypeWriting from 'typewriting'?;
@@ -39,11 +39,11 @@ let spencer2 = 19;
     cainte gaithe.
     `,
     ``,
-    ``,
+    `<img src="./images/About1/eye.png">`,
 
 
     `1169 AD`,
-    ``,
+    `Strong Bow`,
     `An Pháil`,
     `Grey's faith`,
     `A Veue of the present state of Irelande`,
@@ -111,7 +111,7 @@ were killed in single combat
 
 ,
 
-`Dé Danann 
+`The Dé Danann 
 retreated into the Earth,
 and for thousands of years 
 Gaelic civilization 
@@ -129,9 +129,9 @@ English law existed only around Dublin Castle.`
 ,
 
 `In 1580 yet another Gaelic rebellion was defeated.
-The survivors were massacred on the orders of the English commander Lord Grey.`
+The survivors were massacred on the orders of Lord Grey.`
 ,
-`Grey’s servant, the great poet Edmund Spencer wrote to Queen Elizebeth I, explaining why the Irish kept resisting English rule:`
+`The great poet Edmund Spencer wrote to Queen Elizebeth I, explaining why the Irish kept resisting English rule:`
 ,
 
 
@@ -140,14 +140,10 @@ the hart must needes be Irishe;
 for out of the aboundance of the hart, 
 the tonge speaketh"`
 ,
-`It is the contention of this app that
-Edmund Spencer was correct.
-Language and thought are connected.
-`
-,
-`Language is involved with the architecture of our synapses; with how we form thought.<br/>
-Economic and cultural consequences of an actual Gaelic revival are a matter of conjecture.`,
-`The internal cognative consequences of activating Irish are uncontemplatable in English.`
+`Edmund Spencer was correct. <br/>
+Language is somehow involved with thought.`
+
+
 
 
 
@@ -171,7 +167,7 @@ let images = [
     ``,
     ``,
     `skull.png`,//storm calmed
-    `retreat.png`,
+    `g.png`,
     
     `king.png`, //1169AD
     `norman.png`,
@@ -179,7 +175,7 @@ let images = [
     `ruairi.png`,
     `spencer.png`,
     `spencer.png`,
-    `seabhac.png`,
+    `eye.png`,
 ]
 
 $('#next').on('touchend', function(){
