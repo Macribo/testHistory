@@ -47,9 +47,9 @@ let spencer2 = 19;
     `An Pháil`,
     `Grey's faith`,
     `A Veue of the present state of Irelande`,
-    `A Veue of the present state of Irelande`
-,
-    ``,
+    `A Veue of the present state of Irelande`,
+ 
+    `Teanga | Tuiscint | Féin`,
     ``,
     ``,
     ``,
@@ -142,9 +142,12 @@ the tonge speaketh"`
 ,
 `It is the contention of this app that
 Edmund Spencer was correct.
-Language isn't merely communication.`
+Language and thought are connected.
+`
 ,
-`Language is involved with the architecture of our synapses; with how we form thought.`
+`Language is involved with the architecture of our synapses; with how we form thought.<br/>
+Economic and cultural consequences of an actual Gaelic revival are a matter of conjecture.`,
+`The internal cognative consequences of activating Irish are uncontemplatable in English.`
 
 
 
@@ -167,7 +170,7 @@ let images = [
     ``,
     ``,
     ``,
-    ``,//storm calmed
+    `skull.png`,//storm calmed
     `retreat.png`,
     
     `king.png`, //1169AD
@@ -176,7 +179,7 @@ let images = [
     `ruairi.png`,
     `spencer.png`,
     `spencer.png`,
-    `eire.png`,
+    `seabhac.png`,
 ]
 
 $('#next').on('touchend', function(){
