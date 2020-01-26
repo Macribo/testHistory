@@ -9,7 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<script>
+    function loadIt() {
+      setTimeout(function () {
+        var body = document.getElementById('toLoad');
+        body.className += 'loaded';
+        console.log("load spinner visible?")
+      }, 000); //add for curtains intro
+    }
+    
+ </script>
+<body  onload="loadIt()" id="toLoad">
  
     <div class="container">
     <div id="top">
@@ -51,6 +61,13 @@
             </div>
 
         </div>
+        
+            <div id="loader-wrapper">
+                    <div id="loader"></div>
+                    <div class="loader-section section-left">
+                    </div>
+                    <div class="loader-section section-right"></div>
+                 </div>
 
     </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"

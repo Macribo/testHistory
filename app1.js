@@ -176,7 +176,7 @@ let images = [
     `ruairi.png`,
     `spencer.png`,
     `spencer.png`,
-    ``,
+    `eire.png`,
 ]
 
 $('#next').on('touchend', function(){
