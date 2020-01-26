@@ -1,8 +1,11 @@
 
-var slide = 0;
+var slide = 10;
 var firstPoemSlide = 7;
 var lastPoemSlide = 11;
 let lastSlide = 29;
+let spencer1 = 18;
+let spencer2 = 19;
+
 // import TypeWriting from 'typewriting'?;
             let textTop = [
                
@@ -42,13 +45,9 @@ let lastSlide = 29;
     `1169 AD`,
     ``,
     `An Pháil`,
-    `Éirí Amach <br/>
-    1579-1583`,
-    ``,
-    `"Soe that the speach being Irish, 
-the hart must needes be Irishe; 
-for out of the aboundance of the hart, 
-the tonge speaketh"`
+    `Grey's faith`,
+    `A Veue of the present state of Irelande`,
+    `A Veue of the present state of Irelande`
 ,
     ``,
     ``,
@@ -136,9 +135,10 @@ The survivors were massacred on the orders of the English commander Lord Grey.`
 ,
 
 
-`-Edmund Spencer
-<i>A Veue of the present state of Irelande,
-1596</i>`
+`"Soe that the speach being Irish, 
+the hart must needes be Irishe; 
+for out of the aboundance of the hart, 
+the tonge speaketh"`
 ,
 `It is the contention of this app that
 Edmund Spencer was correct.
@@ -220,6 +220,30 @@ $(document).ready(function() {
                 $('#top-content').fadeIn('slow')
                 $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
                 $('#bottom-content').fadeIn('slow')
+                                 
+                },600);
+        }
+       else if(slide===spencer1 || slide===spencer2){
+            
+            // $('#top-content').fadeOut();
+            
+            // $('#middle').fadeOut();
+            $('#bottom-content').fadeOut();
+            $('#middle').css('background-image', `url('./images/About1/${images[slide]}')`);
+            
+            setTimeout(function(){
+                
+                // $('#middle').removeClass('sea');
+                $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
+                console.log( images[slide]);
+                console.log( slide);
+
+                // $('#top-content').fadeIn('slow')
+            
+                
+                $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
+                $('#bottom-content').fadeIn('slow')
+                // $('#middle').fadeIn('slow')
                                  
                 },600);
         }
