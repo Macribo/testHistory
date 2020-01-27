@@ -13,16 +13,17 @@ let spencer2 = 19;
 
     `Fadó fadó...`,
     
-    ``,
-    ``,
-    ``,
-    ``,
-    ``,
+    `mac`,
+    `file`,
+    `oileán`,
+    
+    `stoirm`,
+    `cumhacht`,
     `Am gaeth i m-muir <br/>
     Am tond trethan<br/>
     Am fuaim mara
     `,
-    `Am dam secht ndirend <br/>
+    `Am dam seċt ndirend <br/>
     Am séig i n-aill<br/>
     Am dér gréne<br/>
     Am cain lubai
@@ -32,17 +33,17 @@ let spencer2 = 19;
     Am loch i m-maig`
     ,
     `Am bri danae<br/>
-    Am bri i fodb fras feochtu<br/>
-    Am dé delbas do chind codnu
+    Am bri i fodb fras feoċtu<br/>
+    Am dé delbas do ċind codnu
     `,
     `...Cáinte im gai<br/> 
-    cainte gaithe.
+    cainte gaiṫe.
     `,
-    ``,
+    `comhrac aonair`,
     `<img src="./images/About1/eye.png">`,
 
 
-    `1169 AD`,
+    `1169 CR`,
     `Strong Bow`,
     `An Pháil`,
     `Grey's faith`,
@@ -65,27 +66,27 @@ let textBottom = [
     from an Iberian tribe
     called the Milesians. 
     `,
-    `Breogán son of Brath
-    son of Bile Galamh Míl Espáine
+    `Breogán <span style="color:white">son</span> of Brath
+    <span style="color:white">son</span> of Bile Galamh Míl Espáine
     had seven sons 
     `,
 `    One of whom
-     was a poet
+     was a <span style="color:white">poet</span>
     called 
     Amergin 
     the Milesian.
     `,
     `Amergin 
     led the Milesians
-     to an island ruled by 
+     to an <span style="color:white"> island </span> ruled by 
     the Dé Dannan tribe.`,
     `The druids of Dé Danann 
-    raised a magical storm 
+    raised a magical <span style="color:white">storm</span> 
     to keep Amergín’s 
     expedition from reaching land. 
     `,
     `But Amergín was a poet
-    and words have power...`,
+    and words have <span style="color:white">power</span>...`,
 
     `I am the wind which breaths upon the sea<br/>
   I am the wave of the ocean<br/>
@@ -106,7 +107,7 @@ let textBottom = [
    an Enchantment of Winds.`
 ,  
 `The kings of Dé Danann 
-were killed in single combat
+were killed in <span style="color:white">single combat</span>
  by the sons of Míl Espáine.`
 
 ,
@@ -118,7 +119,7 @@ Gaelic civilization
 flourished in Ireland.`
 ,
 
-`In 1169 AD, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster.`
+`In 1169 CE, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster.`
 ,
 `King Henry II of England used this to declare the conquered cities 
 crown-land. So began 800 years of English rule in Ireland.`
@@ -128,10 +129,10 @@ crown-land. So began 800 years of English rule in Ireland.`
 English law existed only around Dublin Castle.`
 ,
 
-`In 1580 yet another Gaelic rebellion was defeated.
-The survivors were massacred on the orders of Lord Grey.`
+`In 1580 rebel Gaels surrendered to lord Grey de Wilton.
+The surrendered were massacred.`
 ,
-`The great poet Edmund Spencer wrote to Queen Elizebeth I, explaining why the Irish kept resisting English rule:`
+`After the "Grey's Faith" incident, Spencer wrote to Queen Elizebeth, to explain why the Irish kept resisting English rule:`
 ,
 
 
@@ -159,7 +160,7 @@ let images = [
     `blue-cape.gif`,
     `b.png`,
     `c.png`,
-    ``,
+    `file.gif`,
 
     `sea.png`,
     ``,
@@ -218,7 +219,7 @@ $(document).ready(function() {
                 $('#top').empty().append(`<h3 id="top-content">${textTop[slide]}</h3>`);
                 $('#top-content').fadeIn('slow')
                 $('#bottom').empty().append(`<h3 id="bottom-content">${textBottom[slide]}</h3>`);
-                $('#bottom-content').fadeIn('slow')
+                $('#bottom-content').fadeIn('fast')
                                  
                 },600);
         }
