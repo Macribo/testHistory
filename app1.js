@@ -1,5 +1,5 @@
 
-var slide = 20;
+var slide = 0;
 var firstPoemSlide = 7;
 var lastPoemSlide = 11;
 let lastSlide = 29;
