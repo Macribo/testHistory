@@ -2,6 +2,10 @@
     font-family: urchlo;
     src: url('./fonts/Urchlo\ Romhanach.ttf');
   }
+  @font-face {
+    font-family: aonchlo;
+    src: url('./fonts/aonchlo.ttf');
+  }
   
 
 body{

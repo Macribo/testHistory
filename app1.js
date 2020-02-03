@@ -2,7 +2,7 @@
 var slide = 0;
 var firstPoemSlide = 7;
 var lastPoemSlide = 11;
-let lastSlide = 29;
+let lastSlide = 23;
 let spencer1 = 19;
 let spencer2 = 19;
 
@@ -50,8 +50,8 @@ let spencer2 = 19;
     `A Veue of the present state of Irelande`,
     `A Veue of the present state of Irelande`,
  
-    `Uladh`,
-    ``,
+    `<span style="font-family:aonchlo"><b>Uladh</b></span>`,
+    `<span style="font-family:aonchlo"><b>An Teanga</b></span>`,
     `<img src="./images/About1/seabhac.png">`,
     `<img src="./images/About1/seabhac.png">`,
 
@@ -134,7 +134,7 @@ English law existed only around Dublin Castle.`
 `
 Beseiged Gaelic Italian and Spanish forces were slaughtered at Ard na Caithne in Corca Dhuibhne, by lord Grey de Wilton.`
 ,
-`After the 'Grey faith' massacre, Edmund Spencer wrote to Queen Elizebeth, to explain why the Irish kept resisting English rule:`
+`After the 'Grey faith' massacre, Edmund Spencer wrote to Queen Elizebeth, and explained why the Irish kept resisting English rule:`
 ,
 
 
@@ -143,12 +143,12 @@ the hart must needes be Irishe;
 for out of the aboundance of the hart, 
 the tonge speaketh"`
 ,
-`Gaelic  <span style="color:white">Ulster</span> resisted English Rule the hardest.
-In 1607 CE when the last of the <span style="color:white">Ulster</span> chieftains were forced into exile, the era of Druids, Bards and Brehon Law was over.`,
+`<span style="color:white">Ulster</span> was Gaelic Ireland's final stronghold.
+In 1607 CE the last of the chieftains were forced into exile; ending eras of Gaelic, Druidic, Bardic, Savage and Lawful tradition.`,
 
 
 `Yet the <span style="color:white">language</span> survived.`,
-`Through the 19th and 20th Centuries, merticulous scholarship was applied to preserving and reviving the Irish language`,`Irish has entered the technological era. Millions are using technology to discover and form connections as Gaelic people.
+`The determined scholarship of ordinary people has carried <span style="font-family:aonchlo"><b>an Gaeilge</b></span> across centuries to the start of a new era,`,`In which millions of people around the world are using technology to discover and form connections as Gaelic people.
 `
 
 
@@ -212,6 +212,10 @@ $(document).ready(function() {
     
     
     render = () =>{
+        if(slide===lastSlide+1){
+            location.replace('https://ritt-web-bucket-0.s3-eu-west-1.amazonaws.com/ainmbox/index.html');
+
+        }
         if(slide=== firstPoemSlide-1){
             $('#middle').fadeOut();
             // alert();
