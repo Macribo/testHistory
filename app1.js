@@ -1,5 +1,5 @@
 
-var slide = 0;
+var slide = 17;
 var firstPoemSlide = 7;
 var lastPoemSlide = 11;
 let lastSlide = 29;
@@ -43,17 +43,20 @@ let spencer2 = 19;
     `<img src="./images/About1/eye.png">`,
 
 
-    `1169 CR*`,
+    `1169 CR`,
     `Strong Bow`,
     `An Pháil`,
-    `Desmond Rebellion`,
+    `1580 CR`,
     `A Veue of the present state of Irelande`,
     `A Veue of the present state of Irelande`,
  
-    `Teanga | Tuiscint | Féin`,
-    ``,
-    ``,
-    ``,
+    `Imeacht na nIarlaí
+    <br/>1607 CR`,
+    `<img src="./images/About1/seabhac.png">`,
+    `<img src="./images/About1/seabhac.png">`,
+    `<img src="./images/About1/seabhac.png">`,
+
+    
     
                 
               ];
@@ -119,9 +122,7 @@ Gaelic civilization
 flourished in Ireland.`
 ,
 
-`In <span style="color:white">1169 CE</span>, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster. <br>
-<br/>
-    <span style="color:grey">*An Chomh-Ré | aktuelle Ära<span style="color:grey">`
+`In <span style="color:white">1169 CE</span>, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster.`
 ,
 `King Henry II of England used this to declare the conquered cities 
 crown-land. So began 800 years of English rule in Ireland.`
@@ -132,7 +133,7 @@ English law existed only around Dublin Castle.`
 ,
 
 `
-Beseiged Gaelic Italian and Spanish forces were  slaughtered at Ard na Caithne in Corca Dhuibhne, by lord Grey de Wilton.`
+Beseiged Gaelic Italian and Spanish forces were slaughtered at Ard na Caithne in Corca Dhuibhne, by lord Grey de Wilton.`
 ,
 `After the 'Grey faith' massacre, Edmund Spencer wrote to Queen Elizebeth, to explain why the Irish kept resisting English rule:`
 ,
@@ -143,8 +144,14 @@ the hart must needes be Irishe;
 for out of the aboundance of the hart, 
 the tonge speaketh"`
 ,
-`Edmund Spencer was correct. <br/>
-Language is somehow involved with thought.`
+`
+ <span style="color:white">The Flight of the Earls</span><br/> ended the era of Druids, Bards and Brehon Law,<br/> as the last of Ulster's chieftains were forced into exile.`,
+
+
+`Yet the language survived.`,
+`Through the 19th and 20th Centuries, merticulous scholarship was applied to preserving and reviving the Irish language`,`This software is for helping us discover and form connections as Gaelic people.<br/>
+Thar Muir Thar Tír Thar LAN
+`
 
 
 
@@ -174,10 +181,14 @@ let images = [
     `king.gif`, //1169AD
     `norman.png`,
     `pale.png`,
-    `ruairi.png`,
+    `chief.jpg`,
     `spencer.png`,
     `spencer.png`,
-    `eye.png`,
+    `a2.png`,
+    `seabhac.png`,
+    `eire.png`,
+
+    `f.png`,
 ]
 
 $('#next').on('touchend', function(){
