@@ -1,5 +1,5 @@
 
-var slide = 17;
+var slide = 20;
 var firstPoemSlide = 7;
 var lastPoemSlide = 11;
 let lastSlide = 29;
@@ -50,9 +50,8 @@ let spencer2 = 19;
     `A Veue of the present state of Irelande`,
     `A Veue of the present state of Irelande`,
  
-    `Imeacht na nIarlaí
-    <br/>1607 CR`,
-    `<img src="./images/About1/seabhac.png">`,
+    `Uladh`,
+    ``,
     `<img src="./images/About1/seabhac.png">`,
     `<img src="./images/About1/seabhac.png">`,
 
@@ -144,13 +143,12 @@ the hart must needes be Irishe;
 for out of the aboundance of the hart, 
 the tonge speaketh"`
 ,
-`
- <span style="color:white">The Flight of the Earls</span><br/> ended the era of Druids, Bards and Brehon Law,<br/> as the last of Ulster's chieftains were forced into exile.`,
+`Gaelic  <span style="color:white">Ulster</span> resisted English Rule the hardest.
+In 1607 CE when the last of the <span style="color:white">Ulster</span> chieftains were forced into exile, the era of Druids, Bards and Brehon Law was over.`,
 
 
-`Yet the language survived.`,
-`Through the 19th and 20th Centuries, merticulous scholarship was applied to preserving and reviving the Irish language`,`This software is for helping us discover and form connections as Gaelic people.<br/>
-Thar Muir Thar Tír Thar LAN
+`Yet the <span style="color:white">language</span> survived.`,
+`Through the 19th and 20th Centuries, merticulous scholarship was applied to preserving and reviving the Irish language`,`Irish has entered the technological era. Millions are using technology to discover and form connections as Gaelic people.
 `
 
 
