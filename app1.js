@@ -43,10 +43,10 @@ let spencer2 = 19;
     `<img src="./images/About1/eye.png">`,
 
 
-    `1169 CR`,
+    `1169 CR*`,
     `Strong Bow`,
     `An Pháil`,
-    `Grey's faith`,
+    `Desmond Rebellion`,
     `A Veue of the present state of Irelande`,
     `A Veue of the present state of Irelande`,
  
@@ -119,7 +119,9 @@ Gaelic civilization
 flourished in Ireland.`
 ,
 
-`In 1169 CE, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster.`
+`In <span style="color:white">1169 CE</span>, King Diarmait Mac Murchada invited Norman Mercenaries to help him control rebellion in Leinster. <br>
+<br/>
+    <span style="color:grey">*An Chomh-Ré | aktuelle Ära<span style="color:grey">`
 ,
 `King Henry II of England used this to declare the conquered cities 
 crown-land. So began 800 years of English rule in Ireland.`
@@ -129,10 +131,10 @@ crown-land. So began 800 years of English rule in Ireland.`
 English law existed only around Dublin Castle.`
 ,
 
-`In 1580 rebel Gaels surrendered to lord Grey de Wilton.
-The surrendered were massacred.`
+`
+Beseiged Gaelic Italian and Spanish forces were  slaughtered at Ard na Caithne in Corca Dhuibhne, by lord Grey de Wilton.`
 ,
-`After the "Grey's Faith" incident, Spencer wrote to Queen Elizebeth, to explain why the Irish kept resisting English rule:`
+`After the 'Grey faith' massacre, Edmund Spencer wrote to Queen Elizebeth, to explain why the Irish kept resisting English rule:`
 ,
 
 
@@ -143,7 +145,6 @@ the tonge speaketh"`
 ,
 `Edmund Spencer was correct. <br/>
 Language is somehow involved with thought.`
-
 
 
 
@@ -170,7 +171,7 @@ let images = [
     `skull.png`,//storm calmed
     `g.png`,
     
-    `king.png`, //1169AD
+    `king.gif`, //1169AD
     `norman.png`,
     `pale.png`,
     `ruairi.png`,
@@ -192,9 +193,10 @@ $('#prev').on('touchend', function(){
 })
 
 $('#done').on('touchend', function(){
-alert('done pressed')    
+// alert('done pressed')    
 // redirect
 // render();
+location.replace('https://ritt-web-bucket-0.s3-eu-west-1.amazonaws.com/ainmbox/index.html');
 })
 $(document).ready(function() {
     
